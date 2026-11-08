@@ -1,0 +1,37 @@
+name: Tarefa
+description: Proposta de tarefa de dados ou código
+labels: ["precisa-revisão"]
+body:
+  - type: dropdown
+    id: setor
+    attributes:
+      label: Setor
+      options: [automotivo-ve, mineração, agro, energia, logística]
+    validations:
+      required: true
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options: [dados, código]
+    validations:
+      required: true
+  - type: input
+    id: fonte
+    attributes:
+      label: Fonte
+      description: Link da base ou do documento
+    validations:
+      required: true
+  - type: textarea
+    id: fazer
+    attributes:
+      label: O que fazer
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado e exemplo
+    validations:
+      required: true
